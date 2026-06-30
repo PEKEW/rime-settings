@@ -9,12 +9,13 @@ patch:
       ascii_mode: true
     com.runningwithcrayons.Alfred:
       ascii_mode: true
-    com.apple.Terminal:
-      ascii_mode: true
-    com.googlecode.iterm2:
-      ascii_mode: true
-      vim_mode: true
-      no_inline: true
+    # 终端不强制英文输入（按需求注释，如需恢复去掉 # 即可）
+    # com.apple.Terminal:
+    #   ascii_mode: true
+    # com.googlecode.iterm2:
+    #   ascii_mode: true
+    #   vim_mode: true
+    #   no_inline: true
     com.apple.finder:
       ascii_mode: true
     com.sublimetext.3:
@@ -346,6 +347,8 @@ patch:
     line_spacing: 8
     hilite_spacing: 6
     spacing: 12
+    candidate_list_layout: linear  # 横排候选(linear)/竖排(stacked); 老键 horizontal:true 自1.0.1移除
+    text_orientation: horizontal   # 文字方向
     color_scheme: mac_light
     color_scheme_dark: mac_dark
     # 鼠须管盲打，嵌入首选，删除下面两行的#号，即可生效
